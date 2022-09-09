@@ -1,13 +1,13 @@
 #include <stdio.h>
 /**
- * main - main block
- * Return: 0
+ *  main - Entry point
+ *  Return: 0
  */
 int main(void)
 {
-	int i = 27;
+	int i = 45;
 
-	while (i < 37)
+	while (i < 55)
 	{
 		putchar(i);
 		i++;
