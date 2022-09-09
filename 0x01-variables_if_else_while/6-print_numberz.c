@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	int i = 45;
+	int i = 0;
 
-	while (i < 55)
+	while (i < 10)
 	{
 		putchar(i);
 		i++;
