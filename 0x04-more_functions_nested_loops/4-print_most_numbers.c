@@ -1,37 +1,20 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - prints out all the numbers between 00 and 99
- * with no two digits being the same
- * Return: 0
+ * print_most_numbers - entry point
+ * Description: Prints the numbers with _putchar
+ * Return: void
  */
-int main(void)
+
+void print_most_numbers(void)
 {
-	int i, j;
+	int number;
 
-	for (i = 48; i < 58; i++)
+	for (number = '0'; number <= '9'; number++)
 	{
-		for (j = i; j < 58; j++)
-		{
-			if (i == j)
-			{
-				continue;
-			}
-			putchar(i);
-			putchar(j);
-
-			if (i == 56 && j == 57)
-			{
-				break;
-
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
+		if (number == '2' || number == '4')
+			;
+		else
+			_putchar(number);
 	}
-	putchar('\n');
-	return (0);
+	_putchar('\n');
 }
