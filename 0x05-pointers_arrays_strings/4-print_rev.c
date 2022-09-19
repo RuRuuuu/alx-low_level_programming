@@ -2,23 +2,23 @@
 /**
  * print_rev - prints a string in reverse order
  * @s: A pointer to an int that will be changed
+ *
  * Return: void which means our answer is correct
  */
 
 void print_rev(char *s)
 {
-	int i;
+	int x;
 
-	i = 0;
-	while (s[i] != '\0')
+	x = 0;
+	while (s[x] != '\0')
 	{
-		i++;
+	x++;
 	}
 
-	for (i = i - 1 ; i >= 0; i--)
+	for (x = x - 1 ; x >= 0; x--)
 	{
-		_putchar (s[i]);
+		_putchar (s[x]);
 	}
-
 	_putchar ('\n');
 }
